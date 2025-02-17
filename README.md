@@ -10,6 +10,6 @@ Batch specific files outputted by Proteome Discoverer contain protein and peptid
 
 2. After data filtering, batches are combined for normalization:
   - <ins>Within each batch</ins>, a scaling factor per sample is calculated by summing the pool channel values for that batch and then dividing this sum by each sample's sum of values. All abundances within each batch for a sample are multiplied by the sample's respective scaling factor.
-  - <ins>Across all batches</ins>, a scaling factor is calculated by first calculating the geometric mean, defined as the multiplication of all pool columns then taking the nth root (where n = the number of batches, then dividing the geometric mean by each batch's original pool column. All abundances are then multiplied by the scaling factor associated with their batch. 
+  - <ins>Across all batches</ins>, a scaling factor is calculated by first calculating the geometric mean, defined as the multiplication of all pool columns then taking the nth root (where n = the number of batches), then dividing the geometric mean by each batch's original pool column. All abundances are then multiplied by the scaling factor associated with their batch. 
 
 ## Inputs
